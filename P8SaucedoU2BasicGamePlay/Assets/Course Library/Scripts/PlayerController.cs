@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 23;
+    public GameObject ProjectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,13 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+
+        // We will the projectile shoot out
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Launch a projectile from the player
+            Instantiate(ProjectilePrefab, transform.position, ProjectilePrefab.transform.rotation);
         }
             
 
