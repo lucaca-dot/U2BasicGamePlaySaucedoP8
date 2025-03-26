@@ -1787,6 +1787,9 @@ GameObject:
   - component: {fileID: 7366097038324855172}
   - component: {fileID: 7970852608208227486}
   - component: {fileID: 1602174748613748451}
+  - component: {fileID: 8618279818631662573}
+  - component: {fileID: 3468850837337959404}
+  - component: {fileID: 1745602129108325549}
   m_Layer: 0
   m_Name: Animal_Horse_Brown
   m_TagString: Untagged
@@ -1802,7 +1805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6693083027182818273}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0022075397, y: 0.99851996, z: -0.00012013993, w: -0.054341994}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 8.1, y: 0, z: 12}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
@@ -1814,7 +1817,7 @@ Transform:
   - {fileID: 1376060788857523227}
   - {fileID: 796716231876468741}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.027, y: 186.23, z: -0.252}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &7970852608208227486
 Animator:
   serializedVersion: 5
@@ -1848,7 +1851,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8c1dbe05d67d946b609314cc579f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 5
+--- !u!65 &8618279818631662573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693083027182818273}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.836852, y: 37.415367, z: 44.352802}
+  m_Center: {x: -0.3135705, y: 18.207687, z: 1.5838265}
+--- !u!114 &3468850837337959404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693083027182818273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc41d120e01ec744b6c33d8980da447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1745602129108325549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6693083027182818273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f81500059bbfb48b9924771f8ee70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7106396218138292546
 GameObject:
   m_ObjectHideFlags: 0
