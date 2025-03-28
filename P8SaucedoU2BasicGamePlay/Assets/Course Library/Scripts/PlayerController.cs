@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
 
     public float horizontalInput;
+    public float verticalInput;
     public float speed = 10.0f;
+    public float ZRange = 10;
     public float xRange = 23;
     public GameObject ProjectilePrefab;
 
@@ -31,6 +33,22 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+
+        // Keep the player inbounds
+        if (transform.position.z < -ZRange)
+        {
+            transform.position = new Vector3(transform.position.z, transform.position.y, -ZRange);
+        }
+        if (transform.position.z > ZRange)
+        {
+            transform.position = new Vector3(transform.position.z, transform.position.y, ZRange );
+        }
+
+
+
 
         // We will the projectile shoot out
         if (Input.GetKeyDown(KeyCode.Space))

@@ -219,6 +219,9 @@ MonoBehaviour:
   - {fileID: 1916999314692516866, guid: 56e1b3da1aa4c8c479132818a520a2bb, type: 3}
   - {fileID: 6693083027182818273, guid: c5a82e7698493854b806b39ce3fb5433, type: 3}
   - {fileID: 757171309456909215, guid: a0c6df180f80d6c40b46378a6fb27bc4, type: 3}
+  sideSpawnMinZ: 0
+  sideSpawnZ: 0
+  sideSpawnMaxZ: 0
 --- !u!4 &83327305
 Transform:
   m_ObjectHideFlags: 0
@@ -793,7 +796,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  verticalInput: 0
   speed: 18
+  ZRange: 4
   xRange: 22
   ProjectilePrefab: {fileID: 3281893622618077935, guid: 42dc5c51f50fb344c92094c4f01fc39b, type: 3}
 --- !u!1001 &5901754570113666579
